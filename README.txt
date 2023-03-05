@@ -1,9 +1,10 @@
+Online resume website - design by FREEHTML5.co ⬇️
 
-TITLE: 
-Personal - 100% Fully Responsive Free HTML5 Bootstrap Template
 
-AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
+
+
+
+Design by FREEHTML5.co
 
 Website: http://freehtml5.co/
 Twitter: http://twitter.com/fh5co
