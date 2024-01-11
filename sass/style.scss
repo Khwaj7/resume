@@ -60,7 +60,8 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @font-face {
-	font-family: 'icomoon';
+	font-family: "Montserrat", sans-serif;
+	/*font-family: 'icomoon';*/
 	src:url('../fonts/icomoon/icomoon.eot?srf3rx');
 	src:url('../fonts/icomoon/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
 		url('../fonts/icomoon/icomoon.ttf?srf3rx') format('truetype'),
@@ -430,7 +431,7 @@ figure {
 
 #fh5co-footer {
 	margin-top: 50px;
-	background: rgba(0,0,0,1);
+	background: rgb(255, 0, 0);
 	clear: both;
 	color: rgba(255,255,255,.6);
 	font-size: 14px;

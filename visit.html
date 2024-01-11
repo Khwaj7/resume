@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom visit page style -->
+    <link rel="stylesheet" href="css/visit.css">
+
+    <meta charset="UTF-8">
+    <title>Visiteurs</title>
+</head>
+
+<body style="background-image: url(images/bg_img.jpg);">
+    <div class="visit"><p>Nombre de visiteurs : <span id="visitors-count">0</span></p></div>
+    <script>
+        // Fonction pour récupérer le nombre de visiteurs à partir du stockage local
+        function getVisitorsCount() {
+            let count = localStorage.getItem('visitorsCount');
+            return count ? parseInt(count) : 0;
+        }
+
+        // Fonction pour incrémenter le nombre de visiteurs et mettre à jour l'affichage
+        function incrementVisitorsCount() {
+            let count = getVisitorsCount() + 1;
+            localStorage.setItem('visitorsCount', count);
+            document.getElementById('visitors-count').textContent = count;
+        }
+
+        // Appeler la fonction d'incrémentation lors du chargement de la page
+        window.onload = function () {
+            incrementVisitorsCount();
+        }
+    </script>
+</body>
+
+</html>

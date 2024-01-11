@@ -46,6 +46,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -61,7 +62,6 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 
 <body style="background-image: url(images/bg_img.jpg);">
@@ -75,35 +75,49 @@
 							class="menu-text">Education</span></a></li>
 				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span
 							class="menu-text">Experience</span></a></li>
-				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span
-							class="menu-text">Skills</span></a></li>
+				<!-- <li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span
+							class="menu-text">Skills</span></a></li> -->
 			</ul>
 			<div class="fh5co-tab-content active" data-content="1">
 				<div class="fh5co-content-inner text-center">
 					<div class="row row-bottom-padded-sm">
 						<div class="col-md-12">
 							<figure>
-								<img src="images/profile_img.png" alt="my profile pic" width="20%" height="20%">
+								<img src="images/profile_img.png" alt="my profile pic" style="
+								border-radius: 7px;" width="20%" height="20%">
 							</figure>
 							<h1>Philippe Roques-Geoffroy</h1>
-							<p>Né à Toulouse. Je travaille actuellement comme ingénieur en développement aux <a
-									href="https://www.caisses-sociales.mc/accueil" target="_blank">Caisses Sociales de
-									Monaco</a>, depuis Mars 2022.</p>
+							<p>Né à Toulouse. Je travaille actuellement comme ingénieur en développement à <a
+									href="https://www.risf.io" target="_blank">RISF</a>, depuis Mai 2023.</p>
 							<p>Adresse : 293 avenue de Pessicart, 06100 NICE
 								<br />Mail : <a
 									href="mailto: philippe.roquesgeoffroy@gmail.com">philippe.roquesgeoffroy@gmail.com</a>
-								<br />27 ans
-								<br />Célibataire
-								<br />Titulaire permis B - mobile
+								<br />
+								<span id="age"></span> ans
+								<br />Titulaire permis A/B - mobile
 							</p>
 						</div>
+						<!-- age dynamique -->
+						<script>
+							date = new Date();
+							document.getElementById("age").innerHTML = date.getFullYear() - 1995;
+						</script>
 					</div>
 					<div class="row">
 						<!-- <div class="col-md-12 fh5co-counter"> -->
 						<!-- <div class="fh5co-number fh5co-left">4</div> -->
 						<div class="fh5co-text">
 							<h3 class="border-bottom">Technologies pratiquées</h3>
-							<p>JAVA, JS (NodeJS, Angular, React), Solidity, <br />Databases (DB2, MySQL, MongoDB)</p>
+							<p>JAVA (Spring Boot, Quarkus), JS/Typescript (NodeJS, Angular, React), Solidity, HTML, CSS, Bash, DOS
+								<br />Databases (DB2, MySQL, MongoDB)
+							</p>
+							<h3 class="border-bottom">Environnements</h3>
+							<p>Windows, MacOS, Linux, Jira, Gitlab, Github, Jenkins, Docker</p>
+							<h3 class="border-bottom">Méthodes</h3>
+							<p>Agile (Scrum), TDD, code review</p>
+							<h3 class="border-bottom">Soft skills</h3>
+							<p>Communication, adaptabilité, curiosité, ouverture d'esprit</p>
+
 						</div>
 						<!-- </div> -->
 					</div>
@@ -174,12 +188,31 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>03/2022 - Aujourd'hui</h2>
-									<h3>AD Excel - Client Caisses Sociales de Monaco<br /><i style="color: rgba(255, 255, 255, 0.6);">Ingénieur développement</i></h3>
+									<h2>05/2023 - Aujourd'hui</h2>
+									<h3>AD Excel - Client <b>RISF</b><br /><i
+											style="color: rgba(255, 255, 255, 0.6);">Ingénieur développement</i></h3>
+									<ul class="check-list">
+										<li>Développement & Maintenance d'applications pour les professionnels des réseaux Telecom</li>
+										<li>Outils d'acquisition de nouveaux clients, de ventes de nouveaux abonnements ou options</li>
+										<li class="apport">Apports : Travail dans une équipe réduite, montée en compétence sur Quarkus / React, 
+											connaissances fonctionnelles du domaine des Telecom</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>03/2022 - 05/2023</h2>
+									<h3>AD Excel - Client <b>Caisses Sociales de Monaco</b><br /><i
+											style="color: rgba(255, 255, 255, 0.6);">Ingénieur développement</i></h3>
 									<ul class="check-list">
 										<li>Réalisation d'un outil de transmission de déclarations fiscales</li>
 										<li>Participation à l'actualisation d'outils vers Java Spring + front ZK</li>
-										<li class="apport">Apports : Travail en autonomie, montée en compétence, apprentissage d'un framework interne, connaissances fonctionnelles</li>
+										<li class="apport">Apports : Travail en autonomie, montée en compétence,
+											apprentissage d'un framework interne, connaissances fonctionnelles</li>
 									</ul>
 								</div>
 							</div>
@@ -190,7 +223,8 @@
 								</div>
 								<div class="fh5co-text">
 									<h2>09/2019 - 02/2022</h2>
-									<h3>Inetum - Client EDF<br /><i style="color: rgba(255, 255, 255, 0.6);">Concepteur-Développeur</i></h3>
+									<h3>Inetum - Client <b>EDF</b><br /><i
+											style="color: rgba(255, 255, 255, 0.6);">Concepteur-Développeur</i></h3>
 									<ul class="check-list">
 										<li>Conception & développement d'un outil de reporting de données massives
 											(Talend, Jaspersoft, BI, Big Data, Hadoop, HiveQL)</li>
@@ -207,7 +241,9 @@
 								</div>
 								<div class="fh5co-text">
 									<h2>07/2019 - 11/2020</h2>
-									<h3>Inetum - Client EDF<br /><i style="color: rgba(255, 255, 255, 0.6);">Coordinateur technique innovation</i></h3>
+									<h3>Inetum - Client <b>EDF</b><br /><i
+											style="color: rgba(255, 255, 255, 0.6);">Coordinateur technique
+											innovation</i></h3>
 									<ul class="check-list">
 										<li>Supervision & management (planning, ressources) de projets innovation</li>
 										<li>Recherche et prototypage dans les domaines blockchain, IA (Solidity)</li>
@@ -223,8 +259,10 @@
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>04/2017 - 08/2017</h2>
-									<h3>Inetum - Client Ville De Paris<br /><i style="color: rgba(255, 255, 255, 0.6);">Développeur Junior</i></h3>
+									<h2>04/2017 - 08/2019</h2>
+									<h3>Inetum - Client <b>Ville De Paris</b><br /><i
+											style="color: rgba(255, 255, 255, 0.6);">Développeur Junior (alternance)</i>
+									</h3>
 									<ul class="check-list">
 										<li>Développement d'une application de gestion des vacataires (JSP)</li>
 										<li>Développement de scripts de contrôle de fichiers journaux</li>
@@ -240,7 +278,8 @@
 								</div>
 								<div class="fh5co-text">
 									<h2>03/2016 - 04/2016</h2>
-									<h3>Webinage SAS<br /><i style="color: rgba(255, 255, 255, 0.6);">Développeur Junior</i></h3>
+									<h3><b>Webinage SAS</b><br /><i style="color: rgba(255, 255, 255, 0.6);">Développeur Junior
+											(stage)</i></h3>
 									<ul class="check-list">
 										<li>Automatisation d'intégration de données</li>
 										<li>Développement de scripts d'insertion de données en base (Talend Open Studio)
@@ -257,7 +296,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="fh5co-tab-content" data-content="4">
+			<!-- <div class="fh5co-tab-content" data-content="4">
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
@@ -267,14 +306,14 @@
 							<div class="chart" data-percent="90"><span><strong>JAVA</strong>90%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="80"><span><strong>Angular2</strong>75%</span></div>
+							<div class="chart" data-percent="75"><span><strong>Angular2</strong>75%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="75"><span><strong>React</strong>75%</span></div>
 						</div>
 
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="85"><span><strong>Flutter</strong>65%</span></div>
+							<div class="chart" data-percent="65"><span><strong>Flutter</strong>65%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="80"><span><strong>Javascript</strong>80%</span></div>
@@ -291,7 +330,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<footer id="fh5co-footer">
 			<!-- <div class="row">
